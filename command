@@ -30,7 +30,7 @@ python detection.py --network ./dataset/real/polbooks --mode normal&
 python detection.py --network ./dataset/real/railway --mode normal&
 python detection.py --network ./dataset/real/strike --mode normal&
 
-==========general_evaluation.py==========
+==========general_evaluation.py========== evaluation하는 코드. 아래 형식을 맞춰서 작성하시면 됩니다.
 python general_evaluation.py --measure nmi --ground ./groundtruth/TC1-1/TC1-1.cmty --detected ./louvain/TC1-1.cmty --algorithm louvain&
 python general_evaluation.py --measure f1 --ground ./groundtruth/TC1-1/TC1-1.cmty --detected ./louvain/TC1-1.cmty --algorithm louvain&
 python general_evaluation.py --measure nmi --ground ./groundtruth/TC1-2/TC1-2.cmty --detected ./louvain/TC1-2.cmty --algorithm louvain&
@@ -181,7 +181,7 @@ python general_evaluation.py --measure f1 --ground ./groundtruth/strike/strike.c
 python general_evaluation.py --measure nmi --ground ./groundtruth/railway/railway.cmty --detected ./old_output/railway/railway.cmty --algorithm ours&
 python general_evaluation.py --measure f1 --ground ./groundtruth/railway/railway.cmty --detected ./old_output/railway/railway.cmty --algorithm ours&
 
-==========draw.py==========
+==========draw.py==========data 여러개 먹일때나 algorithm 여러개 먹일 때 #으로 이어붙입니다.
 python draw.py --mode community_purity --data TC1-1#TC1-6 --algorithm louvain#ours&
 python draw.py --mode community_purity --data TC1-1 --algorithm louvain#label_propagation#ours&
 python draw.py --mode community_purity --data TC1-6 --algorithm louvain#label_propagation#ours&
@@ -190,8 +190,11 @@ python draw.py --mode seed --data TC1-1#TC1-6&
 python draw.py --mode nmi --data TC1-1#TC1-6 --algorithm louvain#leiden#label_propagation#ours&
 python draw.py --mode f1 --data TC1-1#TC1-6 --algorithm louvain#leiden#label_propagation#ours&
 
+#nmi 점과 선으로 이루어져서 전체 그래프 뽑는 것.
 python draw.py --mode nmilong --algorithm louvain#leiden#ours&
+python draw.py --mode f1long --algorithm louvain#leiden#ours
 
+#현재 num_community는 아래 3번해서 이어붙여놓음.
 python draw.py --mode num_community --data TC1-6#TC1-10#football#mexican#strike&
 
 python draw.py --mode distribution --data TC1-1#TC1-6 --algorithm louvain#ours
@@ -207,10 +210,9 @@ python draw.py --mode scalability --data TC2-1#TC2-2#TC2-3#TC2-4#TC2-5&
 
 python draw.py --mode f1long --algorithm louvain#leiden#ours
 
-==========others.py==========
+==========others.py==========louvain, leiden 돌리는 코드
 python others.py --networkFile ./dataset/TC1-6/network.txt --algorithm leiden&
 python others.py --networkFile ./dataset/TC1-1/network.txt --algorithm label_propagation&
-python others.py --networkFile ./dataset/TC1-6/network.txt --algorithm infomap&
 python others.py --networkFile ./dataset/TC1-10/network.txt --algorithm leiden&
 python others.py --networkFile ./dataset/TC1-10/network.txt --algorithm louvain&
 
