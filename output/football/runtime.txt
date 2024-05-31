@@ -1,0 +1,2 @@
+Dataset: football
+Run time: 0.0130 seconds

@@ -1,0 +1,83 @@
+TC1-1
+Ground_truth: 214
+Ours: 220
+Louvain: 96
+Leiden: 96
+
+TC1-6
+Ground_truth: 205
+Ours: 221
+Louvain: 68
+Leiden: 72
+
+TC1-10
+Ground_truth: 203
+Ours: 217
+Louvain: 16
+Leiden: 14
+
+dolphin
+Ground_truth: 2
+Ours: 7
+Louvain: 5
+Leiden: 5
+
+football
+Ground_truth: 12
+Ours: 13
+Louvain: 10
+Leiden: 10
+
+karate
+Ground_truth: 2
+Ours: 4
+Louvain: 4
+Leiden: 4
+
+polbooks
+Ground_truth: 3
+Ours: 6
+Louvain: 5
+Leiden: 4
+
+mexican
+Ground_truth: 2
+Ours: 3
+Louvain: 3
+Leiden: 4
+
+railway
+Ground_truth: 21
+Ours: 15
+Louvain: 18
+Leiden: 18
+
+strike
+Ground_truth: 3
+Ours: 3
+Louvain: 4
+Leiden: 4
+
+dblp
+Ground_truth: 13477
+Ours: 14137
+Louvain:239
+Leiden: 243
+
+amazon
+Ground_truth: 75149
+Ours: 25601
+Louvain: 361
+Leiden: 242
+
+livejournal
+Ground_truth: 287512
+Ours: 84693
+Louvain: 2001
+Leiden: 2108
+
+youtube
+Ground_truth: 8385
+Ours: 17242
+Louvain:
+Leiden:

@@ -1,0 +1,35 @@
+karate:
+  Node count: 34
+  Edge count: 78
+  Community count: 2
+
+dolphin:
+  Node count: 62
+  Edge count: 159
+  Community count: 2
+
+football:
+  Node count: 115
+  Edge count: 613
+  Community count: 12
+
+railway:
+  Node count: 301
+  Edge count: 2448
+  Community count: 24
+
+polbooks:
+  Node count: 105
+  Edge count: 441
+  Community count: 3
+
+strike:
+  Node count: 24
+  Edge count: 38
+  Community count: 3
+
+mexican:
+  Node count: 35
+  Edge count: 117
+  Community count: 2
+

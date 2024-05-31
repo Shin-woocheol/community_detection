@@ -1,0 +1,2 @@
+Dataset: mexican
+Run time: 0.0020 seconds

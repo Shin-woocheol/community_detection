@@ -1,0 +1,2 @@
+Dataset: karate
+Run time: 0.0015 seconds

@@ -1,0 +1,2 @@
+Dataset: strike
+Run time: 0.0009 seconds

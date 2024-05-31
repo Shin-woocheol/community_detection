@@ -1,0 +1,2 @@
+Dataset: TC1-9
+Run time: 1593.7953 seconds
